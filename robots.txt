@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://abas82332-wq.github.io/funnel-quickstart/sitemap.xml
