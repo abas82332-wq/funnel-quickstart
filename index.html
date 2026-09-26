@@ -3,50 +3,90 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Build Your First Funnel Without Code</title>
-<meta name="description" content="A practical quick-start guide for creators who want to turn an idea into a simple sales funnel without coding.">
+<title>Funnel Quickstart — Build Your First Sales Funnel</title>
+<meta name="description" content="A practical, beginner-friendly guide to choosing a funnel tool, building your first landing page, capturing leads, and automating follow-up.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://abas82332-wq.github.io/funnel-quickstart/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Funnel Quickstart — Build Your First Sales Funnel">
+<meta property="og:description" content="A practical guide for creators who want to launch a first funnel without stitching together five different apps.">
+<meta property="og:url" content="https://abas82332-wq.github.io/funnel-quickstart/">
 <style>
 :root{--bg:#07111f;--card:#0d1b2a;--text:#f4f7fb;--muted:#aeb9c7;--accent:#63e6be;--line:#23344a}
-*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:linear-gradient(180deg,#07111f,#0a1422 55%,#07111f);color:var(--text)}
-.wrap{max-width:1040px;margin:auto;padding:28px 22px 70px}.nav{display:flex;justify-content:space-between;align-items:center;padding:8px 0 34px}.brand{font-weight:800;letter-spacing:.2px}.badge{font-size:12px;border:1px solid var(--line);padding:7px 10px;border-radius:999px;color:var(--muted)}
-.hero{padding:58px 0 40px;display:grid;grid-template-columns:1.15fr .85fr;gap:42px;align-items:center}.kicker{color:var(--accent);font-weight:800;text-transform:uppercase;font-size:13px;letter-spacing:1.2px}.h1{font-size:clamp(42px,6vw,72px);line-height:.98;margin:14px 0 20px;letter-spacing:-3px}.sub{font-size:18px;line-height:1.65;color:var(--muted);max-width:680px}.cta{display:inline-flex;align-items:center;justify-content:center;margin-top:26px;padding:16px 23px;border-radius:12px;background:var(--accent);color:#05110d;font-weight:900;text-decoration:none}.fine{font-size:12px;color:#8291a3;margin-top:12px}.mock{border:1px solid var(--line);background:radial-gradient(circle at 50% 20%,#17314f,#0c1827 62%);border-radius:22px;padding:26px;box-shadow:0 20px 60px #0005}.mock h3{margin:0 0 16px}.step{display:flex;gap:12px;padding:15px 0;border-top:1px solid var(--line)}.num{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:#13263b;font-weight:800;color:var(--accent)}.step b{display:block;margin-bottom:4px}.step span{color:var(--muted);font-size:14px;line-height:1.5}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:26px 0 50px}.card{border:1px solid var(--line);background:var(--card);border-radius:16px;padding:22px}.card h3{margin:8px 0}.card p{margin:0;color:var(--muted);line-height:1.6;font-size:14px}
-.offer{border:1px solid #27465f;background:#0b1a29;border-radius:20px;padding:30px;text-align:center}.offer h2{font-size:32px;margin:0 0 10px}.offer p{color:var(--muted);line-height:1.6}.offer .cta{margin-top:14px}.disclose{max-width:760px;margin:18px auto 0;color:#79889a;font-size:11px;line-height:1.55;text-align:center}
-footer{margin-top:55px;color:#718096;font-size:12px;text-align:center}
-@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:30px}.grid{grid-template-columns:1fr}.h1{letter-spacing:-2px}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:linear-gradient(180deg,#07111f,#0a1422 55%,#07111f);color:var(--text)}
+a{color:inherit}.wrap{max-width:1080px;margin:auto;padding:28px 22px 80px}.nav{display:flex;justify-content:space-between;align-items:center;padding:8px 0 34px;gap:18px}.brand{font-weight:800;letter-spacing:.2px}.navlinks{display:flex;gap:14px;flex-wrap:wrap}.navlinks a{font-size:13px;color:var(--muted);text-decoration:none}.navlinks a:hover{color:var(--text)}
+.hero{padding:58px 0 44px;display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}.kicker{color:var(--accent);font-weight:800;text-transform:uppercase;font-size:13px;letter-spacing:1.2px}.h1{font-size:clamp(43px,6vw,74px);line-height:.98;margin:14px 0 20px;letter-spacing:-3px}.sub{font-size:18px;line-height:1.65;color:var(--muted);max-width:700px}.cta{display:inline-flex;align-items:center;justify-content:center;margin-top:26px;padding:16px 23px;border-radius:12px;background:var(--accent);color:#05110d;font-weight:900;text-decoration:none}.fine{font-size:12px;color:#8291a3;margin-top:12px}
+.mock{border:1px solid var(--line);background:radial-gradient(circle at 50% 20%,#17314f,#0c1827 62%);border-radius:22px;padding:26px;box-shadow:0 20px 60px #0005}.mock h3{margin:0 0 16px}.step{display:flex;gap:12px;padding:15px 0;border-top:1px solid var(--line)}.num{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:#13263b;font-weight:800;color:var(--accent);flex:none}.step b{display:block;margin-bottom:4px}.step span{color:var(--muted);font-size:14px;line-height:1.5}
+.section{padding:26px 0 52px}.section h2{font-size:32px;margin:0 0 12px}.section>p{color:var(--muted);line-height:1.7;max-width:780px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0 0}.card{border:1px solid var(--line);background:var(--card);border-radius:16px;padding:22px}.card h3{margin:8px 0}.card p{margin:0;color:var(--muted);line-height:1.6;font-size:14px}
+.comparison{width:100%;border-collapse:collapse;margin-top:20px;font-size:14px}.comparison th,.comparison td{border-bottom:1px solid var(--line);padding:14px 10px;text-align:left}.comparison th{color:#dce6f0}.comparison td{color:var(--muted)}
+.offer{border:1px solid #27465f;background:#0b1a29;border-radius:20px;padding:32px;text-align:center}.offer h2{font-size:34px;margin:0 0 10px}.offer p{color:var(--muted);line-height:1.6}.offer .cta{margin-top:14px}.disclose{max-width:760px;margin:18px auto 0;color:#79889a;font-size:11px;line-height:1.55;text-align:center}
+footer{margin-top:60px;color:#718096;font-size:12px;text-align:center}footer a{color:#aeb9c7}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:30px}.grid{grid-template-columns:1fr}.h1{letter-spacing:-2px}.nav{align-items:flex-start;flex-direction:column}}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="nav"><div class="brand">Funnel Quickstart</div><div class="badge">No-code • Beginner friendly</div></div>
+  <nav class="nav">
+    <div class="brand">Funnel Quickstart</div>
+    <div class="navlinks">
+      <a href="free-funnel-guide.html">Free Funnel Guide</a>
+      <a href="systeme-io-review.html">Platform Review</a>
+      <a href="funnel-checklist.html">Checklist</a>
+    </div>
+  </nav>
+
   <section class="hero">
     <div>
       <div class="kicker">Launch faster</div>
       <div class="h1">Turn one idea into a simple funnel.</div>
-      <p class="sub">Use one tool to build landing pages, sales funnels, emails, courses and basic automations—without stitching five different apps together.</p>
+      <p class="sub">A practical starting point for creators, freelancers and small businesses who want landing pages, follow-up emails and basic automation in one place.</p>
       <a class="cta" href="https://systeme.io/ar?sa=sa02824455767ebae7d310a5f7e4aec657e7233b8f" rel="nofollow sponsored">Start free — no credit card</a>
-      <div class="fine">Disclosure: this page contains an affiliate link.</div>
+      <div class="fine">Affiliate disclosure: this page contains an affiliate link.</div>
     </div>
     <div class="mock">
       <h3>The 4-step setup</h3>
-      <div class="step"><div class="num">1</div><div><b>Pick one offer</b><span>One clear problem, one clear outcome.</span></div></div>
-      <div class="step"><div class="num">2</div><div><b>Build the page</b><span>Headline → proof → CTA. Keep it focused.</span></div></div>
-      <div class="step"><div class="num">3</div><div><b>Capture the lead</b><span>Send people into one simple follow-up path.</span></div></div>
-      <div class="step"><div class="num">4</div><div><b>Automate the follow-up</b><span>Let the system handle repeatable steps.</span></div></div>
+      <div class="step"><div class="num">1</div><div><b>Pick one offer</b><span>One clear problem and one clear outcome.</span></div></div>
+      <div class="step"><div class="num">2</div><div><b>Build the page</b><span>Headline → proof → CTA. Keep the page focused.</span></div></div>
+      <div class="step"><div class="num">3</div><div><b>Capture the lead</b><span>Give visitors one obvious next step.</span></div></div>
+      <div class="step"><div class="num">4</div><div><b>Automate the follow-up</b><span>Move repeatable work into simple workflows.</span></div></div>
     </div>
   </section>
-  <section class="grid">
-    <div class="card"><h3>Funnel builder</h3><p>Create landing pages and sales flows from templates instead of coding each page.</p></div>
-    <div class="card"><h3>Email + automation</h3><p>Connect follow-up sequences and simple workflows to reduce manual work.</p></div>
-    <div class="card"><h3>Start free</h3><p>The current free plan is available without a credit card, so you can test the platform first.</p></div>
+
+  <section class="section">
+    <h2>What makes a useful first funnel?</h2>
+    <p>The goal is not to build the biggest funnel. It is to make one clear path from a specific problem to a specific action, then measure what happens.</p>
+    <div class="grid">
+      <div class="card"><h3>One audience</h3><p>Choose one type of person with one recognizable problem rather than writing for everyone.</p></div>
+      <div class="card"><h3>One promise</h3><p>Explain the practical outcome a visitor should expect, without vague hype or unsupported claims.</p></div>
+      <div class="card"><h3>One CTA</h3><p>Remove competing actions. Ask for the next step you actually want the visitor to take.</p></div>
+    </div>
   </section>
+
+  <section class="section">
+    <h2>Current Systeme.io plan snapshot</h2>
+    <p>These figures reflect the current public offer shown by Systeme.io and can change. Annual commissions are calculated on the applicable transaction; tax treatment can affect the exact commission received.</p>
+    <table class="comparison">
+      <thead><tr><th>Plan</th><th>Displayed price</th><th>Example 60% commission</th><th>Best use</th></tr></thead>
+      <tbody>
+        <tr><td>Free</td><td>$0</td><td>No commission until a paid purchase</td><td>Test the platform</td></tr>
+        <tr><td>Annual Startup</td><td>$170/year</td><td>$102 example</td><td>Solo creators</td></tr>
+        <tr><td>Annual Webinar</td><td>$470/year</td><td>$282 example</td><td>Webinar-focused businesses</td></tr>
+        <tr><td>Annual Unlimited</td><td>$970/year</td><td>$582 example</td><td>Higher-capacity businesses</td></tr>
+      </tbody>
+    </table>
+    <div class="fine">Source: Systeme.io's current affiliate program page. Exact commission can vary based on transaction details and taxes.</div>
+  </section>
+
   <section class="offer">
-    <h2>Ready to build the first version?</h2>
-    <p>Start with the free plan, validate the idea, then upgrade only when you actually need more capacity.</p>
+    <h2>Want to build the first version now?</h2>
+    <p>Start with the free plan, build one useful page, and validate the idea before adding more complexity.</p>
     <a class="cta" href="https://systeme.io/ar?sa=sa02824455767ebae7d310a5f7e4aec657e7233b8f" rel="nofollow sponsored">Create your free account</a>
-    <div class="disclose">Affiliate disclosure: I may earn a commission if you purchase through this link. The price you pay is not increased by this link.</div>
+    <div class="disclose">Affiliate disclosure: I may earn a commission if you purchase through this link. Your price is not increased by using the link.</div>
   </section>
-  <footer>Built as a practical funnel starter resource.</footer>
+
+  <footer>
+    Built as an independent educational resource. <a href="systeme-io-review.html">Read the platform review</a>.
+  </footer>
 </div>
 </body>
 </html>
